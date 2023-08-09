@@ -1,27 +1,34 @@
 import React from "react";
 import "./Nav.css";
+import {  Link } from "react-router-dom";
 
 function Nav() {
   return (
     <header>
       <article>
-        <h1>
-          <a href="/">
-            Northwest <span>Animal Hospital</span>
-          </a>
-        </h1>
+        <Link to="/" >
+          <h1>
+            <a>
+              Northwest <span>Animal Hospital</span>
+            </a>
+          </h1>
+        </Link>
       </article>
       <aside>
         <ul>
+          <Link to="/StaffList" >
+            <li>
+              <a>All Staff</a>
+            </li>
+          </Link>
+          <Link to="/PetsList" >
           <li>
-            <a href="/staff">All Staff</a>
+            <a>All Pets</a>
           </li>
-          <li>
-            <a href="/pets">All Pets</a>
-          </li>
-        </ul>
-      </aside>
-    </header>
+        </Link>
+      </ul>
+    </aside>
+    </header >
   );
 }
 
