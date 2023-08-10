@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 /*
   Components
@@ -33,8 +33,8 @@ function App() {
           <Route path='/' element={<Home employees={employees} owners={owners} pets={pets} />} />
           <Route path='/StaffList' element={<StaffList employees={employees} />} />
           <Route path='/PetsList' element={<PetsList pets={pets} />} />
-          <Footer />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
